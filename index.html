@@ -24,6 +24,11 @@
         $(".letter").click(function(e) {
           //run this when letter is clicked on
           
+          //check win
+          if (! blanks.includes("-")) {
+            finished = true;
+            $("messages").text("You won!");
+
           //end function if game is over
           if (finished) {return;} 
           
@@ -59,10 +64,7 @@
 
 
 
-          //check win
-          if (! blanks.includes("-")) {
-            finished = true;
-            $("messages").text("You won!");
+
           }
 
         });
