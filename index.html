@@ -64,7 +64,7 @@
           //check win
           if (! blanks.includes("-")) {
             finished = true;
-            $("#messages").text("The word is "+word + " You won!");
+            $("#messages").text("The word is "+$("#"+word).css("text-decoration", "bold") + " You won!");
           }
 
         });
