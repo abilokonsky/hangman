@@ -3,7 +3,7 @@
 <head>
   <title>Hangman!</title>
   <style>
-     p { font-size: 36pt; padding: 35px; background-color : lightblue; color : darkslategray}
+     p { font-size: 24pt; padding: 10px; background-color : lightblue; color : darkslategray}
      #game { width: 70%; margin: auto;}
      
 
@@ -64,7 +64,7 @@
           //check win
           if (! blanks.includes("-")) {
             finished = true;
-            $("#messages").text("You won!");
+            $("#messages").text("The word is "+word + " You won!");
           }
 
         });
