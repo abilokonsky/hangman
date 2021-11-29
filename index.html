@@ -23,10 +23,17 @@
 
         $(".letter").click(function(e) {
           //run this when letter is clicked on
-
+                  
           var letter = $(e.target).text();
           console.log("clicked on ", letter);
 
+          //check letters in word for match
+          var count = 0;
+          for (lof word) {
+            if (l == letter) {
+              blanks = blanks.substring(0, count) + letter + blanks.substring((count+1),blanks.length);
+            }
+          }
 
         });
       });
